@@ -7,13 +7,10 @@ namespace Learning
         static void Main(string[] args)
         {
             LinkedList list = new LinkedList();
-            list.DeleteFromFront();
-            list.PrintLinkedList();
-            list.AddAtFront(12);
-            list.DeleteFromFront();
-            list.PrintLinkedList();
-            list.AddAtFront(12);
             list.DeleteFromEnd();
+            list.ReverseLinkedList(list);
+            list.PrintHead();
+            list.PrintCurrentNode();
             list.PrintLinkedList();
             list.AddFromLast(12);
             list.AddAtFront(11);
@@ -23,6 +20,11 @@ namespace Learning
             list.AddFromLast(14);
             list.PrintLinkedList();
             list.PrintCurrentNode();
+            list.PrintHead();
+            list.ReverseLinkedList(list);
+            list.PrintHead();
+            list.PrintCurrentNode();
+            list.PrintLinkedList();
             list.DeleteFromEnd();
             list.PrintLinkedList();
             list.DeleteFromEnd();
@@ -147,7 +149,7 @@ namespace Learning
             }
             else
             {
-               Console.WriteLine("Current Node is empty"); 
+               Console.WriteLine("Current Node is null"); 
             }
         }
         /// <summary>
@@ -218,7 +220,42 @@ namespace Learning
         /// </summary>
         public void PrintHead()
         {
-            Console.WriteLine("Head Node is: " + Head);
+            if (Count == 0)
+            {
+                Console.WriteLine("Head node is null"); 
+                return;
+            }
+            Console.WriteLine("Head Node is: " + Head.Data);
+        }
+
+        /// <summary>
+        /// Reverses a singly linked list and returns back
+        /// </summary>
+        /// <param name="inputList"></param>
+        /// <returns></returns>
+        public LinkedList ReverseLinkedList(LinkedList inputList)
+        {
+            Console.WriteLine("Linkedlist reverse operation");
+            if (inputList.Count > 0)
+            {
+                var start = inputList.Head;
+                CurrentNode = start;
+                Node prev = null;
+                while (start != null)
+                {
+                    var temp = start.Next;
+                    start.Next = prev;
+                    prev = start;
+                    if (temp == null)
+                    {
+                        Head = start;
+                    }
+                    start = temp;
+                }
+                return inputList;
+            }
+            Console.WriteLine("List is empty");
+            return null;
         }
 
     }
