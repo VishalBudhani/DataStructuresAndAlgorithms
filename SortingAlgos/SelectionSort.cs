@@ -17,8 +17,8 @@ namespace SelectionSort
             Console.WriteLine("Sorting using selection sort approach");
             for (int i=1; i<=dataList.Count; i++)
             {
-                Console.WriteLine(string.Format("Array #{0} before sorting is as: ", i+1) + PrintArray(dataList[i-1]));
-                Console.WriteLine(string.Format("Array #{0} after complete sorting is as: ", i+1) + PrintArray(PerformSelectionSort(dataList[i-1])));
+                Console.WriteLine(string.Format("Array #{0} before sorting is as: ", i) + PrintArray(dataList[i-1]));
+                Console.WriteLine(string.Format("Array #{0} after complete sorting is as: ", i) + PrintArray(PerformSelectionSort(dataList[i-1])));
                 Console.WriteLine("#################################################################################################");
             }
             Console.ReadKey();
