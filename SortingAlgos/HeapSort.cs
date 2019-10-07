@@ -5,6 +5,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+/// <summary>
+/// Heapsort Implementation
+/// Written by Vishal Budhani
+/// </summary>
 namespace HeapSort
 {
     class HeapSort
@@ -118,7 +122,7 @@ namespace HeapSort
                             //    j--;
                             //}
 
-                            // Non optimized Heapify method, comment this code and uncomment above to get fatser results.
+                            // Non optimized Heapify method, comment this code and uncomment above to get faster results.
                             Heapify(ref v, (maxLength / 2) - 1, i + 1, maxLength);
                         }
                         #endregion Heapify code ends here
