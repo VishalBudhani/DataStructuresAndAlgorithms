@@ -1,0 +1,7 @@
+c:\users\vishal budhani\documents\visual studio 2015\Projects\TreeTraversal\TreeTraversal\bin\Debug\TreeTraversal.exe.config
+c:\users\vishal budhani\documents\visual studio 2015\Projects\TreeTraversal\TreeTraversal\bin\Debug\TreeTraversal.exe
+c:\users\vishal budhani\documents\visual studio 2015\Projects\TreeTraversal\TreeTraversal\bin\Debug\TreeTraversal.pdb
+c:\users\vishal budhani\documents\visual studio 2015\Projects\TreeTraversal\TreeTraversal\obj\Debug\TreeTraversal.exe
+c:\users\vishal budhani\documents\visual studio 2015\Projects\TreeTraversal\TreeTraversal\obj\Debug\TreeTraversal.pdb
+C:\Users\Vishal Budhani\Documents\Visual Studio 2015\Projects\TreeTraversal\TreeTraversal\obj\Debug\TreeTraversal.csprojAssemblyReference.cache
+C:\Users\Vishal Budhani\Documents\Visual Studio 2015\Projects\TreeTraversal\TreeTraversal\obj\Debug\TreeTraversal.csproj.CoreCompileInputs.cache
